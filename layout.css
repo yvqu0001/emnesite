@@ -25,3 +25,20 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
+
+/*VVVVVVVVVVVVVVVV --MEDIA-- VVVVVVVVVVVVVVVV*/
+@media (max-width: 500px) {
+  .grid_1-1 {
+    grid-template-columns: 1fr;
+  }
+  .wrapper {
+    display: flex;
+    align-items: start;
+  }
+  .accordion {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/*^^^^^^^^^^^^^^^^ --MEDIA-- ^^^^^^^^^^^^^^^^^*/
