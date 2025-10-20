@@ -1,0 +1,79 @@
+<div class="accordion-menu">
+  <!--insert tournament name-->
+  <div class="form-row">
+    <label for="tournament-name" id="tournament-label">Tournament name:</label>
+    <input type="text" id="tournament-name" placeholder="Enter name..." />
+  </div>
+
+  <div class="dropdown" id="tournament-type">
+    <div class="dropdown-header">
+      Tournament type: <span class="selected">--</span>
+    </div>
+    <div class="dropdown-options">
+      <div class="option" data-value="americano">Americano</div>
+      <div class="option" data-value="mexicano">Mexicano</div>
+      <div class="option" data-value="brackets">Brackets</div>
+    </div>
+  </div>
+  <div class="dropdown" id="court-ordering">
+    <div class="dropdown-header">
+      Court ordering: <span class="selected">--</span>
+    </div>
+  </div>
+  <div class="dropdown-options">
+    <div class="option" data-value="xxxx">IDK?</div>
+    <!--What was the point of this one?????-->
+  </div>
+  <div class="dropdown" id="scoring">
+    <div class="dropdown-header">Scoring: <span class="selected">--</span></div>
+    <div class="dropdown-options">
+      <div class="option" data-value="11-points">Play 11 points</div>
+      <div class="option" data-value="21-points">Play 21 points</div>
+      <div class="option" data-value="24-points">Play 24 points</div>
+      <div class="option" data-value="points-or-games">
+        Play points or games
+      </div>
+    </div>
+  </div>
+  <div class="dropdown" id="final-pair">
+    <div class="dropdown-header">
+      Final pair: <span class="selected">--</span>
+    </div>
+    <div class="dropdown-options">
+      <div class="option" data-value="1-2-vs-3-4">1 & 2 vs 3 & 4</div>
+      <div class="option" data-value="1-3-vs-2-4">1 & 3 vs 2 & 4</div>
+      <div class="option" data-value="1-4-vs-2-3">1 & 4 vs 2 & 3</div>
+    </div>
+  </div>
+  <div class="dropdown" id="courts">
+    <div class="dropdown-header">Courts: <span class="selected">--</span></div>
+    <div class="dropdown-options">
+      <div class="option" data-value="xxxx">IDK??</div>
+      <!--am i sposed to make this with names also? or just amount of courts-->
+    </div>
+  </div>
+  <div class="dropdown" id="result-sorting">
+    <div class="dropdown-header">
+      Result sorting: <span class="selected">--</span>
+    </div>
+    <div class="dropdown-options">
+      <div class="option" data-value="points">Points > wins</div>
+      <div class="option" data-value="wins">Wins > points</div>
+    </div>
+  </div>
+  <div class="dropdown" id="team-format">
+    <div class="dropdown-header">
+      Team format: <span class="selected">--</span>
+    </div>
+    <div class="dropdown-options">
+      <div class="option" data-value="individual">Individual</div>
+      <div class="option" data-value="team">Team</div>
+    </div>
+  </div>
+  <!--make the number change with buttons-->
+  <div class="form-row">
+    <label for="player-amount">Player amount:</label>
+    <input type="number" id="player-amount" min="2" max="100" value="8" />
+  </div>
+  <button id="create-btn">Create</button>
+</div>
