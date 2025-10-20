@@ -1,0 +1,22 @@
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+  min-height: 400px;
+}
+
+.accordion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#category {
+  grid-column: 1/3;
+  justify-self: center;
+}

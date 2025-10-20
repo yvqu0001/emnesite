@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="menu/logo.webp" alt="Logo" />
+      </a>
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="participant.html">Participant</a></li>
+        <li><a href="organizer.html">Organizer</a></li>
+        <li>
+          <a href="/"
+            ><img id="menusearch" src="menu/search.webp" alt="search"
+          /></a>
+        </li>
+        <li>
+          <a href="/"
+            ><img id="menuprofile" src="menu/profile.webp" alt="profile"
+          /></a>
+        </li>
+      </ul>
+      <!--<button class="burger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>-->
+    </nav>
+  </header>
+  <body>
+    <div class="accordion">
+      <!--Tournament name-->
+      <label for="tournament-name" class="category">Tournament name:</label>
+      <!--label might have to be under .accordion-item, check when doing js-->
+      <div class="accordion-item">
+        <input type="text" id="tournament-name" placeholder="Enter name" />
+      </div>
+
+      <!--Tournament type-->
+      <label for="tournament-type" class="category">Tournament type:</label>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="accordion-label">Tournament Type</span>
+          <svg
+            class="accordion-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 10"
+          >
+            <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <button class="accordion-option">Americano</button>
+          <button class="accordion-option">Mexicano</button>
+          <button class="accordion-option">Brackets</button>
+        </div>
+      </div>
+
+      <!--Court ordering-->
+      <label for="court-ordering" class="category">Court ordering:</label>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="accordion-label">Court ordering</span>
+          <svg
+            class="accordion-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 10"
+          >
+            <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+          </svg>
+        </button>
+        <div class="accordion-content">Ascending</div>
+        <div class="accordion-content">Random</div>
+      </div>
+
+      <!--Scoring-->
+      <label for="scoring" class="category">Scoring:</label>
+      <div class="accortion-item">
+        <button class="accordion-header">
+          <span class="accordion-label">Scoring</span>
+          <svg
+            class="accordion-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 10"
+          >
+            <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <button class="accordion-option">Play 11 points</button>
+          <button class="accordion-option">Play 21 points</button>
+          <button class="accordion-option">Play 24 points</button>
+          <button class="accordion-option">Play points or games</button>
+        </div>
+      </div>
+
+      <!--Final pair-->
+      <label for="final-pair" class="category">Final pair:</label>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="accordion-label">Final pair</span>
+          <svg
+            class="accordion-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 10"
+          >
+            <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <button class="accordion-option">1 & 2 vs 3 & 4</button>
+          <button class="accordion-option">1 & 3 vs 2 & 4</button>
+          <button class="accordion-option">1 & 4 vs 2 & 3</button>
+        </div>
+      </div>
+
+      <!--Courts-->
+      <label for="court-amount" class="category">Court amount:</label>
+      <!--label might have to be under .accordion-item, check when doing js-->
+      <div class="accordion-item">
+        <input type="number" id="court-amount" min="1" max="100" value="2" />
+      </div>
+
+      <!--Result sorting-->
+      <label for="result-sorting" class="category">Result sorting:</label>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="accordion-label">Result sorting</span>
+          <svg
+            class="accordion-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 10"
+          >
+            <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <button class="accordion-option">Points > wins</button>
+          <button class="accordion-option">Wins > points</button>
+        </div>
+      </div>
+
+      <!--Team format-->
+      <label for="team-format" class="category">Team format:</label>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="accordion-label">Team format</span>
+          <svg
+            class="accordion-arrow"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 25 10"
+          >
+            <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+          </svg>
+        </button>
+        <div class="accordion-content">
+          <button class="accordion-option">Individual</button>
+          <button class="accordion-option">Team</button>
+        </div>
+      </div>
+
+      <!--Player amount-->
+      <label for="player-amount" class="category">Player amount:</label>
+      <!--label might have to be under .accordion-item, check when doing js-->
+      <div class="accordion-item">
+        <input type="number" id="player-amount" min="2" max="100" value="4" />
+      </div>
+
+      <!--Button (maybe not button prompt??)-->
+
+      <button id="createButton">Create</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
