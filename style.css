@@ -251,9 +251,6 @@ tbody td {
 .filter-header,
 #filter-label {
   width: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
   background-color: rgba(23, 25, 37, 0.8);
   color: #d2d2d2;
   border: none;
@@ -262,7 +259,6 @@ tbody td {
   margin-bottom: 12px;
   text-align: right;
   cursor: pointer;
-  justify-self: end;
 }
 
 #filter-player-amount,
@@ -277,7 +273,7 @@ tbody td {
   font-family: "helvetica neue", arial, sans-serif;
   font-size: 14px;
   box-sizing: border-box;
-  padding-left: 100px;
+  padding-left: 240px;
 }
 
 .filter-arrow {
@@ -306,16 +302,15 @@ tbody td {
 }
 
 #filter-createButton {
-  grid-column: 1 / -1; /* from start to end column / -1 last column*/
-  justify-self: center;
-  background-color: #9ba500;
-  color: #171925;
+  display: block;
+  background-color: #171925;
+  color: #dde836;
   border: none;
-  padding: 10px 20px;
-  margin-top: 20px;
-  font-family: "helvetica neue", arial, sans-serif;
+  padding: 10px 40px;
+  margin: 20px auto;
+  font-family: "avenir next", "helvetica neue", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: uppercase;
 }
 /*^^^^^^^^^^^^^^^^ --FILTER-- ^^^^^^^^^^^^^^^^^*/
