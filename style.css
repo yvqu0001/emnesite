@@ -201,9 +201,121 @@ a {
 
 .tournament-list {
   background-color: rgba(28, 38, 60, 0.7);
-  padding: 20px;
-  margin: 20px;
+  margin: 40px 20px 40px 60px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.title-bar th,
+.title-bar {
   font-family: "avenir next", "helvetica neue", sans-serif;
+  color: #d2d2d2;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: start;
+  padding: 30px;
+  background-color: #1c263c;
+}
+
+tbody td {
+  font-family: "helvetica neue", arial, sans-serif;
+  color: #d2d2d2;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 30px;
 }
 
 /*^^^^^^^^^^^^^^^^ --Participant-- ^^^^^^^^^^^^^^^^^*/
+
+/*VVVVVVVVVVVVVVVV --FILTER-- VVVVVVVVVVVVVVVV*/
+.filter {
+  width: 400px;
+  margin: 40px auto;
+  font-family: "helvetica neue", arial, sans-serif;
+  font-size: 14px;
+  background-color: rgba(28, 38, 60, 0.7);
+}
+
+.filter-item {
+  padding: 0 40px;
+}
+
+.filter-title-bar {
+  margin-bottom: 20px;
+}
+
+.filter-header,
+#filter-label {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(23, 25, 37, 0.8);
+  color: #d2d2d2;
+  border: none;
+  border-bottom: 4px solid #d2d2d2;
+  padding: 12px;
+  margin-bottom: 12px;
+  text-align: right;
+  cursor: pointer;
+  justify-self: end;
+}
+
+#filter-player-amount,
+#filter-court-amount {
+  width: 100%;
+  background-color: rgba(23, 25, 37, 0.8);
+  color: #d2d2d2;
+  border: none;
+  border-bottom: 4px solid #d2d2d2;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-family: "helvetica neue", arial, sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding-left: 100px;
+}
+
+.filter-arrow {
+  width: 25px;
+  height: 10px;
+  fill: var(--grey, #d2d2d2);
+  transition: transform 0.3s ease;
+  margin-left: 30px;
+}
+
+.filter-header.active .filter-arrow {
+  transform: rotate(180deg);
+}
+
+.filter-content {
+  display: none;
+}
+
+.filter-option {
+  width: 100%;
+  background-color: rgba(23, 25, 37, 0.8);
+  color: #d2d2d2;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+
+#filter-createButton {
+  grid-column: 1 / -1; /* from start to end column / -1 last column*/
+  justify-self: center;
+  background-color: #9ba500;
+  color: #171925;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-family: "helvetica neue", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+/*^^^^^^^^^^^^^^^^ --FILTER-- ^^^^^^^^^^^^^^^^^*/

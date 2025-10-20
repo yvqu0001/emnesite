@@ -36,31 +36,216 @@
     </nav>
   </header>
   <body>
-    <section class="tournament-list">
-      <table>
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Tournament</th>
-            <th>Location</th>
-            <th>Players</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>#/#</td>
-            <td>"...""</td>
-            <td>Place</td>
-            <td>#/#</td>
-          </tr>
-          <tr>
-            <td>#/#</td>
-            <td>"...""</td>
-            <td>Place</td>
-            <td>#/#</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <div class="grid_2-1">
+      <!--VVVVVVVVVVVVVVVV --TABLE-- VVVVVVVVVVVVVVVV-->
+      <section class="tournament-list">
+        <table>
+          <thead class="title-bar">
+            <tr>
+              <th>Date</th>
+              <th>Tournament</th>
+              <th>Location</th>
+              <th>Players</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+            <tr>
+              <td>#/#</td>
+              <td>"..."</td>
+              <td>Place</td>
+              <td>#/#</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <!--^^^^^^^^^^^^^^^^ --TABLE-- ^^^^^^^^^^^^^^^^^-->
+
+      <!--VVVVVVVVVVVVVVVV --FILTER-- VVVVVVVVVVVVVVVV-->
+
+      <!-- FIGURE OUT WHAT FILTERS TO HAVE FOR PARTICIPANTS!!!!!!!!!!!!!!-->
+
+      <div class="filter">
+        <h3 class="title-bar filter-title-bar">Filter</h3>
+
+        <!--Tournament type-->
+        <div class="filter-item">
+          <button class="filter-header">
+            <span class="filter-label">Tournament Type</span>
+            <svg
+              class="filter-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 10"
+            >
+              <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+            </svg>
+          </button>
+          <div class="filter-content">
+            <button class="filter-option">Americano</button>
+            <button class="filter-option">Mexicano</button>
+            <button class="filter-option">Brackets</button>
+          </div>
+        </div>
+
+        <!--Court ordering-->
+        <div class="filter-item">
+          <button class="filter-header">
+            <span class="filter-label">Court ordering</span>
+            <svg
+              class="filter-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 10"
+            >
+              <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+            </svg>
+          </button>
+          <div class="filter-content">Ascending</div>
+          <div class="filter-content">Random</div>
+        </div>
+
+        <!--Scoring-->
+        <div class="filter-item">
+          <button class="filter-header">
+            <span class="filter-label">Scoring</span>
+            <svg
+              class="filter-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 10"
+            >
+              <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+            </svg>
+          </button>
+          <div class="filter-content">
+            <button class="filter-option">Play 11 points</button>
+            <button class="filter-option">Play 21 points</button>
+            <button class="filter-option">Play 24 points</button>
+            <button class="filter-option">Play points or games</button>
+          </div>
+        </div>
+
+        <!--Final pair-->
+        <div class="filter-item">
+          <button class="filter-header">
+            <span class="filter-label">Final pair</span>
+            <svg
+              class="filter-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 10"
+            >
+              <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+            </svg>
+          </button>
+          <div class="filter-content">
+            <button class="filter-option">1 & 2 vs 3 & 4</button>
+            <button class="filter-option">1 & 3 vs 2 & 4</button>
+            <button class="filter-option">1 & 4 vs 2 & 3</button>
+          </div>
+        </div>
+
+        <!--Courts-->
+        <div class="filter-item">
+          <input
+            type="number"
+            id="filter-court-amount"
+            min="1"
+            max="100"
+            value="2"
+          />
+        </div>
+
+        <!--Result sorting-->
+        <div class="filter-item">
+          <button class="filter-header">
+            <span class="filter-label">Result sorting</span>
+            <svg
+              class="filter-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 10"
+            >
+              <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+            </svg>
+          </button>
+          <div class="filter-content">
+            <button class="filter-option">Points > wins</button>
+            <button class="filter-option">Wins > points</button>
+          </div>
+        </div>
+
+        <!--Team format-->
+        <div class="filter-item">
+          <button class="filter-header">
+            <span class="filter-label">Team format</span>
+            <svg
+              class="filter-arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 25 10"
+            >
+              <path d="M1.25 0L12.5 9L23.75 0H25L12.5 10L0 0H1.25Z" />
+            </svg>
+          </button>
+          <div class="filter-content">
+            <button class="filter-option">Individual</button>
+            <button class="filter-option">Team</button>
+          </div>
+        </div>
+
+        <!--Player amount-->
+        <div class="filter-item">
+          <input
+            type="number"
+            id="filter-player-amount"
+            min="2"
+            max="100"
+            value="4"
+          />
+        </div>
+
+        <!--Button (maybe not button prompt??)-->
+
+        <button id="filter-createButton">Create</button>
+      </div>
+      <!--^^^^^^^^^^^^^^^^ --FILTER-- ^^^^^^^^^^^^^^^^^-->
+    </div>
   </body>
 </html>
