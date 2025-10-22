@@ -201,7 +201,7 @@ a {
 
 .tournament-list {
   background-color: rgba(28, 38, 60, 0.7);
-  margin: 40px 20px 40px 60px;
+  margin: 40px 3vw 40px 3vw;
 }
 
 table {
@@ -229,11 +229,15 @@ tbody td {
   padding: 30px;
 }
 
+.participant-bar {
+  display: none;
+}
+
 /*^^^^^^^^^^^^^^^^ --Participant-- ^^^^^^^^^^^^^^^^^*/
 
 /*VVVVVVVVVVVVVVVV --FILTER-- VVVVVVVVVVVVVVVV*/
 .filter {
-  width: 400px;
+  width: 30vw;
   margin: 40px auto;
   font-family: "helvetica neue", arial, sans-serif;
   font-size: 14px;
@@ -250,6 +254,8 @@ tbody td {
 
 .filter-header,
 #filter-label {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   background-color: rgba(23, 25, 37, 0.8);
   color: #d2d2d2;
@@ -257,7 +263,7 @@ tbody td {
   border-bottom: 4px solid #d2d2d2;
   padding: 12px;
   margin-bottom: 12px;
-  text-align: right;
+  text-align: left;
   cursor: pointer;
 }
 
@@ -273,7 +279,6 @@ tbody td {
   font-family: "helvetica neue", arial, sans-serif;
   font-size: 14px;
   box-sizing: border-box;
-  padding-left: 240px;
 }
 
 .filter-arrow {
@@ -328,11 +333,17 @@ tbody td {
 
   .wrapper p {
     margin-top: 40px;
+    max-width: 280px;
   }
 
   .element {
     margin-top: 200px;
   }
+
+  h1 {
+    font-size: 35px;
+  }
+
   /*^^^^^^^^^^^^^^^^ --MEDIA FRONT PAGE-- ^^^^^^^^^^^^^^^^^*/
 
   /*VVVVVVVVVVVVVVVV --MEDIA ORGANISER-- VVVVVVVVVVVVVVVV*/
@@ -340,14 +351,10 @@ tbody td {
   .accordion {
     width: 300px;
     margin: 50px auto;
-    padding: 40px 70px;
+    padding: 40px 30px;
     font-family: "helvetica neue", arial, sans-serif;
     font-size: 14px;
     background-color: rgba(28, 38, 60, 0.7);
-  }
-
-  .accordion-label {
-    display: none;
   }
 
   .accordion-header,
@@ -394,10 +401,7 @@ tbody td {
   }
 
   .category {
-    text-align: end;
-    align-self: center;
-    margin-bottom: 12px;
-    margin-right: 50px;
+    display: none;
   }
 
   #createButton {
@@ -413,6 +417,69 @@ tbody td {
     font-weight: 500;
     text-transform: uppercase;
   }
+  /*^^^^^^^^^^^^^^^^ --MEDIA ORGANIZER-- ^^^^^^^^^^^^^^^^^*/
+
+  /*VVVVVVVVVVVVVVVV --MEDIA PARTICIPANT-- VVVVVVVVVVVVVVVV*/
+  .filter {
+    display: none;
+  }
+
+  .tournament-list {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .title-bar th,
+  .title-bar {
+    display: none;
+  }
+
+  tbody td {
+    font-family: "helvetica neue", arial, sans-serif;
+    color: #d2d2d2;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 8vw;
+  }
+
+  .participant-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 371px;
+    margin: 50px auto 0 auto;
+  }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(23, 25, 37, 0.7);
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  h5 {
+    font-family: "avenir next", "helvetica neue", sans-serif;
+    font-size: 14px;
+    color: #dde836;
+    font-weight: 400;
+  }
+
+  .filter-button {
+    text-transform: uppercase;
+  }
+
+  /*^^^^^^^^^^^^^^^^ --MEDIA PARTICIPANT-- ^^^^^^^^^^^^^^^^^*/
 }
+
+/* @media (max-width: 500px) { FIX FOR TABLET
+} */
 
 /*^^^^^^^^^^^^^^^^ --MEDIA-- ^^^^^^^^^^^^^^^^^*/
