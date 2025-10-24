@@ -81,7 +81,10 @@ nav {
 /*^^^^^^^^^^^^^^ --MENU-- ^^^^^^^^^^^^^^*/
 
 body {
-  background-color: #4b4b84;
+  /* background-color: #4b4b84; */
+  background-image: url("background.webp");
+  background-size: cover;
+  background-position: center;
   color: #d2d2d2;
   font-family: "helvetica neue", arial, sans-serif;
 }
@@ -144,10 +147,14 @@ a {
   border: none;
   border-bottom: 4px solid #d2d2d2;
   padding: 12px;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
   text-align: left;
   cursor: pointer;
   justify-self: end;
+}
+
+.accordion-item {
+  margin-bottom: 12px;
 }
 
 .accordion-arrow {
@@ -163,6 +170,7 @@ a {
 
 .accordion-content {
   display: none;
+  margin-bottom: 12px;
 }
 
 .accordion-option {
